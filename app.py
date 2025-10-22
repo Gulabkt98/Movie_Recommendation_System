@@ -17,8 +17,8 @@ session.mount('https://', adapter)
 
 # Get TMDB API key from environment, fallback to existing key but warn
 TMDB_API_KEY = os.getenv('TMDB_API_KEY', 'af165e8e2feaea9c07ff82141ef2bd46')
-if TMDB_API_KEY == 'af165e8e2feaea9c07ff82141ef2bd46':
-    st.warning('Using embedded TMDB API key. For production set TMDB_API_KEY environment variable.')
+##if TMDB_API_KEY == 'af165e8e2feaea9c07ff82141ef2bd46':
+ ##   st.warning('Using embedded TMDB API key. For production set TMDB_API_KEY environment variable.')
 
 def fetch_poster(movie_id):
     try:
